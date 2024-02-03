@@ -8,9 +8,10 @@ int main() {
   screen[screenWidth * screenHeight] = '\0';
   for (int i = 0; i < screenWidth; i++) {
     for (int j = 0; j < screenHeight; j++) {
-
+      screen[i + j * screenWidth] = '@';
     }
   }
+  printf(screen);
   getchar();
   return 0;
 }
